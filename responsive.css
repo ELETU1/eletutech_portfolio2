@@ -1,0 +1,157 @@
+/* Responsiveness */
+@media (max-width: 991px) {
+  header,
+  header.sticky {
+    padding: 20px 50px;
+  }
+
+  header .menu {
+    display: none;
+  }
+
+  header .menu {
+    position: fixed;
+    background: #fff;
+    display: block;
+    top: 70px;
+    left: -100%;
+    width: 100%;
+    height: 100vh;
+    text-align: center;
+    border-top: 1px solid rgba(0, 0, 0, 0.2);
+    transition: 0.5s;
+  }
+
+  header .menu.active {
+    position: fixed;
+    background: #fff;
+    display: block;
+    top: 70px;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    text-align: center;
+    border-top: 1px solid rgba(0, 0, 0, 0.2);
+  }
+
+  header ul li a {
+    font-size: 20px;
+    color: #111;
+    font-weight: 400;
+    margin: 10px 0;
+  }
+
+  .toggle {
+    width: 40px;
+    height: 40px;
+    background-image: url("./images/menu.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 30px;
+    cursor: pointer;
+  }
+
+  .toggle.active {
+    width: 40px;
+    height: 40px;
+    background-image: url("./images/close.png");
+    background-position: center;
+    background-size: 25px;
+    background-repeat: no-repeat;
+    cursor: pointer;
+  }
+
+  header.sticky .toggle {
+    filter: invert(1);
+  }
+
+  section {
+    padding: 100px 30px;
+  }
+
+  .banner {
+    padding: 150px 50px 100px;
+  }
+
+  .banner h2 {
+    font-size: 1.5em;
+  }
+
+  .banner h3 {
+    font-size: 1em;
+  }
+
+  .btn {
+    margin-top: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 50px;
+  }
+
+  .textBx {
+    position: relative;
+    top: 170px;
+  }
+
+  .content {
+    flex-direction: column;
+  }
+
+  .contentBx {
+    padding: 0;
+  }
+
+  .content .w-50 img {
+    display: block;
+    margin: 0 auto 30px auto;
+  }
+
+  .heading h2 {
+    font-size: 24px;
+  }
+
+  .contentBx h3 {
+    font-size: 20px;
+  }
+
+  .contentBx h2 {
+    font-size: 20px;
+    font-weight: 300;
+  }
+
+  .services .content .servicesBx {
+    margin: 10px;
+  }
+
+  .contactInfo {
+    margin: 10px 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .testimonial .content .testimonialBx {
+    max-width: calc(100% - 20px);
+    padding: 40px 20px;
+    margin: 30px;
+  }
+  .heading.bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+  }
+}
+
+@media (max-width: 600px) {
+  .testimonial .content .testimonialBx {
+    max-width: calc(100% - 20px);
+    padding: 40px 20px;
+    margin: 30px;
+  }
+  .heading.bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+  }
+}

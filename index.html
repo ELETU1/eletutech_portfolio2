@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="./responsive.css" />
+    <!-- Bootstrap Cdn Icon -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css"
+    />
+    <title>ELETUTECH | Portfolio</title>
+  </head>
+  <body>
+    <!-- Menu Bar -->
+    <header>
+      <!-- Menu Tabs and Logo -->
+      <a href="#" class="logo">Portfolio</a>
+
+      <!-- Toggle menu -->
+      <div class="toggle" onclick="toggleMenu();"></div>
+
+      <ul class="menu">
+        <li><a href="#home" onclick="toggleMenu();">Home</a></li>
+        <li><a href="#about" onclick="toggleMenu();">About</a></li>
+        <li><a href="#service" onclick="toggleMenu();">Services</a></li>
+        <li><a href="#work" onclick="toggleMenu();">Work</a></li>
+        <li><a href="#testimonial" onclick="toggleMenu();">Testimonials</a></li>
+        <li><a href="#contact" onclick="toggleMenu();">Contact</a></li>
+      </ul>
+    </header>
+
+    <!-- Banner Section -->
+    <section class="banner" id="home">
+      <div class="textBx">
+        <h2>
+          Hello, I'm <br />
+          <span>ELETUTECH</span>
+        </h2>
+        <h3>I'm a Full Stack Web Developer</h3>
+        <a href="#about" class="btn">About Me</a>
+      </div>
+    </section>
+
+    <!-- About Me -->
+    <section class="about" id="about">
+      <div class="heading">
+        <p>Get to Know Me</p>
+        <h2>About Me</h2>
+      </div>
+      <div class="content">
+        <div class="w50">
+          <img src="./images/home.jpg" class="proPic" alt="" />
+        </div>
+        <div class="contentBx w50">
+          <h3>Who am i ?</h3>
+          <h2>
+            I'm <b>ELETUTECH</b>, a Visual UI/UX Designer and Web Developer
+          </h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam odio
+            ullam soluta cupiditate, iusto, sed unde accusamus consectetur
+            magnam neque deleniti repellendus animi porro distinctio quisquam
+            maxime laboriosam cumque vitae nulla quae dolorum fugit. Voluptatum
+            quia quod eveniet. Placeat, consequuntur.
+          </p>
+          <br />
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo unde
+            est, ducimus expedita veniam neque praesentium odio tempore earum,
+            porro enim placeat quisquam culpa delectus, quos numquam alias
+            adipisci at facere? Inventore quaerat quis distinctio nostrum
+            temporibus, beatae voluptatem corporis.
+          </p>
+          <div class="heading bottom">
+            <a href="./images/resume.docx" target="_blank" class="btn round"
+              >Download CV</a
+            >
+            <div class="bt"><b>Name:</b> ELETUTECH <br /><b>Age:</b> 23</div>
+            <div class="bt">
+              <b>Email:</b> issaissaeletu@gmail.com <br /><b>Location:</b>
+              Nigeria
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Our Services -->
+    <section class="service" id="service">
+      <div class="heading white">
+        <h2>Our Services</h2>
+        <p>Services i offer to my client</p>
+      </div>
+
+      <div class="content">
+        <div class="servicesBx">
+          <i class="bi bi-filetype-css" style="font-size: 40px"></i>
+          <h3>Web Design CSS</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+            Architecto, rem.
+          </p>
+        </div>
+
+        <div class="servicesBx">
+          <i class="bi bi-browser-chrome" style="font-size: 40px"></i>
+          <h3>Web Developer</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+            Architecto, rem.
+          </p>
+        </div>
+
+        <div class="servicesBx">
+          <i class="bi bi-pc-display-horizontal" style="font-size: 40px"></i>
+          <h3>UI/UX Designer</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+            Architecto, rem.
+          </p>
+        </div>
+
+        <div class="servicesBx">
+          <i class="bi bi-android2" style="font-size: 40px"></i>
+          <h3>Software Developer</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+            Architecto, rem.
+          </p>
+        </div>
+
+        <div class="servicesBx">
+          <i class="bi bi-cart-check" style="font-size: 40px"></i>
+          <h3>E-Commerce Project</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+            Architecto, rem.
+          </p>
+        </div>
+
+        <div class="servicesBx">
+          <i class="bi bi-android" style="font-size: 40px"></i>
+          <h3>MERN Project</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+            Architecto, rem.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Our Latest Work -->
+    <section class="work" id="work">
+      <div class="heading">
+        <h2>Our Latest Work</h2>
+        <p>Showcasing some of my <b>Udemy Courses</b></p>
+      </div>
+
+      <div class="content">
+        <div class="workBx">
+          <a href="#" target="_blank">
+            <img src="./images/jsCourse.jpg" alt="" />
+            <p>Complete Javascript Course - 2023</p>
+          </a>
+        </div>
+
+        <div class="workBx">
+          <a href="#" target="_blank">
+            <img src="./images/htmlCourse.jpg" alt="" />
+            <p>HTML5 for Beginners - 2023</p>
+          </a>
+        </div>
+
+        <div class="workBx">
+          <a href="#" target="_blank">
+            <img src="./images/animationCourse.jpg" alt="" />
+            <p>CSS Animation with latest effect - 2023</p>
+          </a>
+        </div>
+
+        <div class="workBx">
+          <a href="#" target="_blank">
+            <img src="./images/webCourse.jpg" alt="" />
+            <p>Web Design Layouts</p>
+          </a>
+        </div>
+
+        <div class="workBx">
+          <a href="#" target="_blank">
+            <img src="./images/cssCourse.jpg" alt="" />
+            <p>Full MERN Course</p>
+          </a>
+        </div>
+
+        <div class="workBx">
+          <a href="#" target="_blank">
+            <img src="./images/formCourse.jpg" alt="" />
+            <p>Data Analysis Course - 2023</p>
+          </a>
+        </div>
+
+        <div class="heading">
+          <a href="#" class="btn" style="color: #fff" target="_blank"
+            >View all my Courses</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonial" id="testimonial">
+      <div class="heading white">
+        <h2>Testimonial</h2>
+        <p>What my Clients think about me</p>
+      </div>
+
+      <div class="content">
+        <div class="testimonialBx">
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cupiditate
+            magnam, aliquid rem et, corporis sit quae illo officia quos
+            voluptas, laudantium nostrum modi omnis hic.
+          </p>
+          <h3>
+            Ibn Issa <br />
+            Web Designer
+          </h3>
+        </div>
+
+        <div class="testimonialBx">
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cupiditate
+            magnam, aliquid rem et, corporis sit quae illo officia quos
+            voluptas, laudantium nostrum modi omnis hic.
+          </p>
+          <h3>
+            Eletu <br />
+            Full-Stack Developer
+          </h3>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Layout -->
+    <section class="contact" id="contact">
+      <div class="heading white">
+        <p>Feel Free to Contact me Anytimes</p>
+        <h2>Get In Touch</h2>
+      </div>
+
+      <div class="content">
+        <div class="contactInfo">
+          <h3>Contact Info</h3>
+          <p>
+            Always available for freelance work if the right project comes
+            along, Feel free to contact me!
+          </p>
+
+          <div class="contactInfoBx">
+            <div class="box">
+              <div class="icon">
+                <i class="bi bi-geo-alt-fill"></i>
+              </div>
+              <div class="text">
+                <h3>Address</h3>
+                <address>78, Ojuekun Street, Eletu Compound.</address>
+              </div>
+            </div>
+
+            <div class="box">
+              <div class="icon">
+                <i class="bi bi-telephone"></i>
+              </div>
+              <div class="text">
+                <h3>Mobile Number</h3>
+                <p>+2348104234085</p>
+              </div>
+            </div>
+
+            <div class="box">
+              <div class="icon">
+                <i class="bi bi-envelope-fill"></i>
+              </div>
+              <div class="text">
+                <h3>Email Address</h3>
+                <p>issaissaeletu@gmail.com</p>
+              </div>
+            </div>
+
+            <br />
+            <h3>Social Connect</h3>
+            <div class="boxSocial">
+              <div class="icon">
+                <a href="#" target="_blank"> <i class="bi bi-facebook"></i></a>
+              </div>
+
+              <div class="icon">
+                <a href="#" target="_blank"> <i class="bi bi-twitter"></i></a>
+              </div>
+
+              <div class="icon">
+                <a href="#" target="_blank"> <i class="bi bi-linkedin"></i> </a>
+              </div>
+
+              <div class="icon">
+                <a href="#" target="_blank"><i class="bi bi-youtube"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="formBx">
+          <form>
+            <h3>Message Me</h3>
+            <input type="text" placeholder="Full Name" />
+            <input type="email" placeholder="Email" />
+            <textarea placeholder="Your Message" rows="6"></textarea>
+
+            <input type="submit" value="Send Message" />
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer Layout -->
+    <footer class="copyright">
+      <p>2023, &copy; ELETUTECH, All Rights Reserved</p>
+    </footer>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
